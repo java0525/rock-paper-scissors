@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>RPS</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <img src="https://andygrunwald.com/img/posts/playing-rock-paper-scissors-with-500-people/rock-paper-scissors-game-rules.png" alt="" class="center">
+  <div class="container">
+    <header class="header">
+      <h1>Rock Paper Scissors</h1>
+      <button id="restart" class="restart-btn">Restart Game</button>
+      <div id="score" class="score">
+        <p>Player: 0</p>
+        <p>Computer: 0</p>
+      </div>
+    </header>
+    <h2>Choose one</h2>
+    <div class="choices">
+      <i id="rock" class="choice fas fa-fist-raised fa-10x fa-rotate-270"></i>
+      <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+      <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
+    </div>
+    <div class="textt">
+
+      <p id="rockk">Rock </p>
+      <p id="paperr">Paper </p>
+      <p id="scissorss">Scissors </p>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div id="result" class="modal-content"></div>
+  </div>
+
+
+
+
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

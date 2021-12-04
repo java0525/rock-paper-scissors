@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.textt {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  margin: 3px;
+  color: black;
+}
+
+#rockk {
+  padding-left: 172px;
+  padding-right: 20px;
+}
+
+#paperr {
+  padding-right: 20px;
+}
+
+#scissorss {
+  padding-right: 110px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.header h1:hover {
+  color: #DA1661;
+  transition-duration: 0.4s;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: blue;
+  font-size: 30px;
+  color: black;
+}
+
+:root {
+  --primary-color: #0A3F94;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --lose-color: #dc3545;
+  --win-color: #28a745;
+  --modal-duration: 1s;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+  /* background-image: url('https://media.istockphoto.com/photos/game-background-picture-id1061119906?k=20&m=1061119906&s=612x612&w=0&h=L9VfCtkYb1OKbF9OVo2x1hf_pDX4A-7BJwVm6wEhm0E='); */
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px 80px;
+  border: 5px solid #222;
+}
+
+.restart-btn {
+  display: none;
+  background: #11C7CA;
+  color: white;
+  padding: 5px;
+  margin: 0 auto 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition-duration: 0.4s;
+  border-radius: 50px;
+}
+
+.restart-btn:hover {
+  background: #11C7CA;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.7rem;
+  color: #fff;
+  height: 50px;
+}
+
+.score p:first-child {
+  background: var(--primary-color);
+}
+
+.score p:last-child {
+  background: #1F9D09;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.choice {
+  cursor: pointer;
+}
+
+.choice:hover {
+  color: #07B3B6;
+  transition-duration: 0.5s;
+}
+
+.text-win {
+  color: var(--win-color);
+}
+
+.text-lose {
+  color: var(--lose-color);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: lightblue;
+  ;
+}
+
+.modal-content {
+  background: #fff;
+  text-align: center;
+  margin: 10% auto;
+  width: 350px;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-content h1 {
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .choice {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .choice {
+    font-size: 80px;
+  }
+}
